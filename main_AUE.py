@@ -166,8 +166,8 @@ net.fit(Y, Alpha,
         validation_split=0.05,
         callbacks=[reduce_lr, early_stop],verbose=1)
 print('Elaspsed time: ' + str((time.time() - t)/60) + ' min')
-# net.save_weights('AUI_k' + str(args.Ka) + '_Nd' + str(args.Nd) + '4.h5')
-# net.load_weights('AUI_k' + str(args.Ka) + '_Nd' + str(args.Nd) + '4.h5')
+# net.save_weights('AUI_k' + str(args.Ka) + '_Nd' + str(args.Nd) + '.h5')
+# net.load_weights('AUI_k' + str(args.Ka) + '_Nd' + str(args.Nd) + '.h5')
 
 hist_dict = net.history.history
 history = dict(loss=[], val_loss=[], acc=[], val_acc=[])
